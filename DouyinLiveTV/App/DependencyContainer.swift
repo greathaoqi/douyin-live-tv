@@ -1,0 +1,42 @@
+//
+//  DependencyContainer.swift
+//  DouyinLiveTV
+//
+//  Simple manual dependency injection container for the small app.
+//  Avoids third-party DI framework complexity.
+//
+
+import Foundation
+import SwiftData
+
+class DependencyContainer {
+    static let shared = DependencyContainer()
+
+    // SwiftData model container
+    let modelContainer: ModelContainer
+
+    // Authentication dependencies
+    public let tokenStorage: TokenStorage
+    public let apiClient: APIClient
+    public let authService: AuthService
+    public let authStateManager: AuthStateManager
+
+    private init() {
+        // Configure SwiftData model container
+        do {
+            self.modelContainer = try ModelContainer(for: [])
+        } catch {
+            fatalError("Failed to initialize SwiftData ModelContainer: \(error)")
+        }
+
+        // Initialize authentication dependencies
+        self.tokenStorage = TokenStorage()
+        self.apiClient = APIClient()
+        self.authStateManager = AuthStateManager(tokenStorage: self.tokenStorage)
+        self.authService = AuthService(
+            tokenStorage: self.tokenStorage,
+            apiClient: self.apiClient,
+            authStateManager: self.authStateManager
+        )
+    }
+}
