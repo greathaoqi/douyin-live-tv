@@ -82,43 +82,44 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| UX-01 | Pending | Pending |
-| UX-02 | Pending | Pending |
-| UX-03 | Pending | Pending |
-| UX-04 | Pending | Pending |
-| UX-05 | Pending | Pending |
-| UX-06 | Pending | Pending |
-| UX-07 | Pending | Pending |
-| UX-08 | Pending | Pending |
-| UX-09 | Pending | Pending |
-| AUTH-01 | Pending | Pending |
-| AUTH-02 | Pending | Pending |
-| AUTH-03 | Pending | Pending |
-| AUTH-04 | Pending | Pending |
-| LIVE-01 | Pending | Pending |
-| LIVE-02 | Pending | Pending |
-| LIVE-03 | Pending | Pending |
-| LIVE-04 | Pending | Pending |
-| LIVE-05 | Pending | Pending |
-| LIVE-06 | Pending | Pending |
-| LIVE-07 | Pending | Pending |
-| FAV-01 | Pending | Pending |
-| FAV-02 | Pending | Pending |
-| FAV-03 | Pending | Pending |
-| FAV-04 | Pending | Pending |
-| FAV-05 | Pending | Pending |
-| FAV-06 | Pending | Pending |
-| REFRESH-01 | Pending | Pending |
-| REFRESH-02 | Pending | Pending |
-| REFRESH-03 | Pending | Pending |
-| QOL-01 | Pending | Pending |
-| QOL-02 | Pending | Pending |
+| UX-01 | Phase 3 | Pending |
+| UX-02 | Phase 3 | Pending |
+| UX-03 | Phase 3 | Pending |
+| UX-04 | Phase 3 | Pending |
+| UX-05 | Phase 3 | Pending |
+| UX-06 | Phase 3 | Pending |
+| UX-07 | Phase 3 | Pending |
+| UX-08 | Phase 3 | Pending |
+| UX-09 | Phase 3 | Pending |
+| AUTH-01 | Phase 2 | Pending |
+| AUTH-02 | Phase 2 | Pending |
+| AUTH-03 | Phase 2 | Pending |
+| AUTH-04 | Phase 2 | Pending |
+| LIVE-01 | Phase 4 | Pending |
+| LIVE-02 | Phase 4 | Pending |
+| LIVE-03 | Phase 4 | Pending |
+| LIVE-04 | Phase 4 | Pending |
+| LIVE-05 | Phase 4 | Pending |
+| LIVE-06 | Phase 4 | Pending |
+| LIVE-07 | Phase 4 | Pending |
+| FAV-01 | Phase 5 | Pending |
+| FAV-02 | Phase 5 | Pending |
+| FAV-03 | Phase 5 | Pending |
+| FAV-04 | Phase 5 | Pending |
+| FAV-05 | Phase 5 | Pending |
+| FAV-06 | Phase 5 | Pending |
+| REFRESH-01 | Phase 6 | Pending |
+| REFRESH-02 | Phase 6 | Pending |
+| REFRESH-03 | Phase 6 | Pending |
+| QOL-01 | Phase 6 | Pending |
+| QOL-02 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 30 total
-- Mapped to phases: 0
-- Unmapped: 30 ⚠️
+- Mapped to phases: 30
+- Unmapped: 0 ✓
 
 ---
+
 *Requirements defined: 2026-03-30*
-*Last updated: 2026-03-30 after initial definition*
+*Last updated: 2026-03-30 after roadmap creation*
