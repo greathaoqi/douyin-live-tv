@@ -15,6 +15,8 @@
 		14BFA2022B9F7B00000A9A551 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */; };
 		14BFA2052B9F7B00000A9A551 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2032B9F7B00000A9A551 /* AuthToken.swift */; };
 		14BFA2062B9F7B00000A9A551 /* LoginQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2042B9F7B00000A9A551 /* LoginQRCode.swift */; };
+		14BFA2092B9F7B00000A9A551 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2072B9F7B00000A9A551 /* TokenStorage.swift */; };
+		14BFA2112B9F7B00000A9A551 /* TokenStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2102B9F7B00000A9A551 /* TokenStorageTests.swift */; };
 		F57B4A5F299B1F4100A3C7B3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F57B4A5F299B1F4100A3C7B3 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
 		14BFA2032B9F7B00000A9A551 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/AuthToken.swift"; sourceTree = "<group>"; };
 		14BFA2042B9F7B00000A9A551 /* LoginQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/LoginQRCode.swift"; sourceTree = "<group>"; };
+		14BFA2072B9F7B00000A9A551 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Keychain/TokenStorage.swift"; sourceTree = "<group>"; };
+		14BFA2102B9F7B00000A9A551 /* TokenStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TokenStorageTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +119,17 @@
 		14BFA1D82B9F7A8A00A9A551 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				14BFA2082B9F7B00000A9A551 /* Keychain */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		14BFA2082B9F7B00000A9A551 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2072B9F7B00000A9A551 /* TokenStorage.swift */,
+			);
+			path = Data/Keychain;
 			sourceTree = "<group>";
 		};
 		14BFA1D92B9F7A8A00A9A551 /* Products */ = {
@@ -132,6 +145,7 @@
 			children = (
 				14BFA1F12B9F7A9400A9A551 /* DouyinLiveTVTests.swift */,
 				14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */,
+				14BFA2102B9F7B00000A9A551 /* TokenStorageTests.swift */,
 			);
 			path = DouyinLiveTVTests;
 			sourceTree = "<group>";
@@ -240,6 +254,7 @@
 				14BFA2012B9F7B00000A9A551 /* LiveStats.swift in Sources */,
 				14BFA2052B9F7B00000A9A551 /* AuthToken.swift in Sources */,
 				14BFA2062B9F7B00000A9A551 /* LoginQRCode.swift in Sources */,
+				14BFA2092B9F7B00000A9A551 /* TokenStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +264,7 @@
 			files = (
 				14BFA1F22B9F7A9400A9A551 /* DouyinLiveTVTests.swift in Sources */,
 				14BFA2022B9F7B00000A9A551 /* ModelTests.swift in Sources */,
+				14BFA2112B9F7B00000A9A551 /* TokenStorageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
