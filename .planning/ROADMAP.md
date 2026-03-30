@@ -8,7 +8,7 @@
 
 ## Phases
 
-- [ ] **Phase 1: Project Setup & Core Infrastructure** - Create Xcode project, establish architecture layers, configure dependencies
+- [x] **Phase 1: Project Setup & Core Infrastructure** - Create Xcode project, establish architecture layers, configure dependencies (completed 2026-03-30)
 - [ ] **Phase 2: Authentication & API Layer** - Implement secure authentication, Douyin API client, token management
 - [ ] **Phase 3: tvOS Foundation & Navigation** - Build basic UI structure with focus-based navigation, tab bar, tvOS HIG compliance
 - [ ] **Phase 4: Live Room Core Display** - Implement main live room screen with statistics overlay and video playback
@@ -27,11 +27,11 @@
   3. Third-party dependencies added via Swift Package Manager (Alamofire, KeychainSwift, etc.)
   4. Project builds successfully with no errors
   5. Core domain models defined (LiveRoom, LiveStats)
-**Plans:** 3 plans
+**Plans:** 3/3 plans complete
 
 Plans:
-- [ ] 01-01-PLAN.md — Create Xcode project and four-layer folder structure with dependencies
-- [ ] 01-02-PLAN.md — Define core domain models (LiveRoom, LiveStats) with TDD
+- [x] 01-01-PLAN.md — Create Xcode project and four-layer folder structure with dependencies
+- [x] 01-02-PLAN.md — Define core domain models (LiveRoom, LiveStats) with TDD
 - [ ] 01-03-PLAN.md — Full build verification and manual configuration check
 
 ### Phase 2: Authentication & API Layer
@@ -39,13 +39,19 @@ Plans:
 **Depends on:** Phase 1
 **Requirements:** AUTH-01, AUTH-02, AUTH-03, AUTH-04
 **Success Criteria** (what must be TRUE):
-  1. User can log into Douyin via web view in the app
+  1. User can log into Douyin via QR code in the app
   2. Authentication tokens are stored encrypted in Keychain, not UserDefaults
   3. Session persists across app restarts
   4. Token refresh is handled automatically when expired
   5. API client can make authenticated requests to Douyin endpoints
-**Plans:** TBD
+**Plans:** 4 plans
 **UI hint**: yes
+
+Plans:
+- [ ] 02-01-PLAN.md — Add KeychainSwift dependency, create domain models, implement TokenStorage
+- [ ] 02-02-PLAN.md — Create API client network layer with QR generation
+- [ ] 02-03-PLAN.md — Implement AuthService with QR login flow and automatic token refresh
+- [ ] 02-04-PLAN.md — Create LoginView UI and integrate app routing
 
 ### Phase 3: tvOS Foundation & Navigation
 **Goal:** App follows tvOS Human Interface Guidelines with proper focus-based navigation
@@ -110,8 +116,8 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Project Setup & Core Infrastructure | 0/3 | Not started | - |
-| 2. Authentication & API Layer | 0/0 | Not started | - |
+| 1. Project Setup & Core Infrastructure | 2/3 | Complete    | 2026-03-30 |
+| 2. Authentication & API Layer | 0/4 | Not started | - |
 | 3. tvOS Foundation & Navigation | 0/0 | Not started | - |
 | 4. Live Room Core Display | 0/0 | Not started | - |
 | 5. Favorites Management | 0/0 | Not started | - |
