@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14BFA1E52B9F7A8A00A9A551 /* DouyinLiveTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1E42B9F7A8A00A9A551 /* DouyinLiveTVApp.swift */; };
+		14BFA1E82B9F7A8A00A9A551 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1E72B9F7A8A00A9A551 /* ContentView.swift */; };
+		14BFA1F22B9F7A9400A9A551 /* DouyinLiveTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1F12B9F7A9400A9A551 /* DouyinLiveTVTests.swift */; };
+		14BFA2002B9F7B00000A9A551 /* LiveRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1FB2B9F7B00000A9A551 /* LiveRoom.swift */; };
+		14BFA2012B9F7B00000A9A551 /* LiveStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1FC2B9F7B00000A9A551 /* LiveStats.swift */; };
+		14BFA2022B9F7B00000A9A551 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14BFA1F42B9F7A9400A9A551 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14BFA1D22B9F7A8A00A9A551 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14BFA1DF2B9F7A8A00A9A551;
+			remoteInfo = DouyinLiveTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14BFA1D12B9F7A8A00A9A551 /* DouyinLiveTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouyinLiveTV; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BFA1E42B9F7A8A00A9A551 /* DouyinLiveTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/DouyinLiveTVApp.swift"; sourceTree = "<group>"; };
+		14BFA1E72B9F7A8A00A9A551 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/Common/ContentView.swift"; sourceTree = "<group>"; };
+		14BFA1EE2B9F7A8F00A9A551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14BFA1F02B9F7A9400A9A551 /* DouyinLiveTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouyinLiveTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14BFA1F12B9F7A9400A9A551 /* DouyinLiveTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouyinLiveTVTests.swift; sourceTree = "<group>"; };
+		14BFA1FB2B9F7B00000A9A551 /* LiveRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/LiveRoom.swift"; sourceTree = "<group>"; };
+		14BFA1FC2B9F7B00000A9A551 /* LiveStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/LiveStats.swift"; sourceTree = "<group>"; };
+		14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14BFA1DB2B9F7A8A00A9A551 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BFA1F72B9F7A9400A9A551 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14BFA1CD2B9F7A8A00A9A551 = {
+			isa = PBXGroup;
+			children = (
+				14BFA1D52B9F7A8A00A9A551 /* App */,
+				14BFA1D62B9F7A8A00A9A551 /* UI */,
+				14BFA1D72B9F7A8A00A9A551 /* Domain */,
+				14BFA1D82B9F7A8A00A9A551 /* Data */,
+				14BFA1EE2B9F7A8F00A9A551 /* Assets.xcassets */,
+				14BFA1E92B9F7A8A00A9A551 /* Preview Content */,
+				14BFA1D92B9F7A8A00A9A551 /* Products */,
+				14BFA1EA2B9F7A8A00A9A551 /* DouyinLiveTVTests */,
+			);
+			path = DouyinLiveTV;
+			sourceTree = "<group>";
+		};
+		14BFA1D52B9F7A8A00A9A551 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA1E42B9F7A8A00A9A551 /* DouyinLiveTVApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		14BFA1D62B9F7A8A00A9A551 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA1E72B9F7A8A00A9A551 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		14BFA1D72B9F7A8A00A9A551 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA1FE2B9F7B00000A9A551 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		14BFA1FE2B9F7B00000A9A551 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA1FB2B9F7B00000A9A551 /* LiveRoom.swift */,
+				14BFA1FC2B9F7B00000A9A551 /* LiveStats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14BFA1D82B9F7A8A00A9A551 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		14BFA1D92B9F7A8A00A9A551 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA1D12B9F7A8A00A9A551 /* DouyinLiveTV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14BFA1EA2B9F7A8A00A9A551 /* DouyinLiveTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA1F12B9F7A9400A9A551 /* DouyinLiveTVTests.swift */,
+				14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */,
+			);
+			path = DouyinLiveTVTests;
+			sourceTree = "<group>";
+		};
+		14BFA1E92B9F7A8A00A9A551 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14BFA1DF2B9F7A8A00A9A551 /* DouyinLiveTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BFA1E02B9F7A8B00A9A551 /* Build configuration list for PBXNativeTarget "DouyinLiveTV" */;
+			buildPhases = (
+				14BFA1D82B9F7A8A00A9A551 /* Sources */,
+				14BFA1DB2B9F7A8A00A9A551 /* Frameworks */,
+				14BFA1DC2B9F7A8A00A9A551 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DouyinLiveTV;
+			productName = DouyinLiveTV;
+			productReference = 14BFA1D12B9F7A8A00A9A551 /* DouyinLiveTV.app */;
+			productType = com.apple.product-type.application;
+		};
+		14BFA1F52B9F7A9400A9A551 /* DouyinLiveTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14BFA1F82B9F7A9400A9A551 /* Build configuration list for PBXNativeTarget "DouyinLiveTVTests" */;
+			buildPhases = (
+				14BFA1F32B9F7A9400A9A551 /* Sources */,
+				14BFA1F72B9F7A9400A9A551 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14BFA1F42B9F7A9400A9A551 /* PBXContainerItemProxy */,
+			);
+			name = DouyinLiveTVTests;
+			productName = DouyinLiveTVTests;
+			productReference = 14BFA1F02B9F7A9400A9A551 /* DouyinLiveTVTests.xctest */;
+			productType = com.apple.product-type.bundle.unit-test;
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14BFA1D22B9F7A8A00A9A551 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = "DouyinLiveTV";
+				TargetAttributes = {
+					14BFA1DF2B9F7A8A00A9A551 = {
+						CreatedOnToolsVersion = 16.0;
+						ProvisioningStyle = Automatic;
+					};
+					14BFA1F52B9F7A9400A9A551 = {
+						CreatedOnToolsVersion = 16.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 14BFA1D32B9F7A8B00A9A551 /* Build configuration list for PBXProject "DouyinLiveTV" */;
+			closeAfterInitializing = 1;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14BFA1CD2B9F7A8A00A9A551;
+			productRefGroup = 14BFA1D92B9F7A8A00A9A551 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14BFA1DF2B9F7A8A00A9A551 /* DouyinLiveTV */,
+				14BFA1F52B9F7A9400A9A551 /* DouyinLiveTVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14BFA1DC2B9F7A8A00A9A551 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BFA1EE2B9F7A8F00A9A551 /* Assets.xcassets */ in Resources,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14BFA1D82B9F7A8A00A9A551 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BFA1E52B9F7A8A00A9A551 /* DouyinLiveTVApp.swift in Sources */,
+				14BFA1E82B9F7A8A00A9A551 /* ContentView.swift in Sources */,
+				14BFA2002B9F7B00000A9A551 /* LiveRoom.swift in Sources */,
+				14BFA2012B9F7B00000A9A551 /* LiveStats.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BFA1F32B9F7A9400A9A551 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14BFA1F22B9F7A9400A9A551 /* DouyinLiveTVTests.swift in Sources */,
+				14BFA2022B9F7B00000A9A551 /* ModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14BFA1D42B9F7A8B00A9A551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECTIVE-C = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_AUTOHCONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DouyinLiveTV/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DouyinLiveTV;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FALLBACK_GL = YES;
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-Xfrontend",
+					"-enable-experimental-concurrency",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.douyinlivetv.DouyinLiveTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		14BFA1E02B9F7A8B00A9A551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DouyinLiveTV/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DouyinLiveTV;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.douyinlivetv.DouyinLiveTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		14BFA1E12B9F7A8B00A9A551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECTIVE-C = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_AUTOHCONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DouyinLiveTV/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DouyinLiveTV;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FALLBACK_GL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douyinlivetv.DouyinLiveTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		14BFA1E22B9F7A8B00A9A551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DouyinLiveTV/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DouyinLiveTV;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.douyinlivetv.DouyinLiveTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+		14BFA1F92B9F7A9400A9A551 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DouyinLiveTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douyinlivetv.DouyinLiveTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		14BFA1FA2B9F7A9400A9A551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DouyinLiveTVTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.douyinlivetv.DouyinLiveTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14BFA1D32B9F7A8B00A9A551 /* Build configuration list for PBXProject "DouyinLiveTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BFA1D42B9F7A8B00A9A551 /* Debug */,
+				14BFA1E12B9F7A8B00A9A551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BFA1E02B9F7A8B00A9A551 /* Build configuration list for PBXNativeTarget "DouyinLiveTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BFA1E02B9F7A8B00A9A551 /* Debug */,
+				14BFA1E22B9F7A8B00A9A551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14BFA1F82B9F7A9400A9A551 /* Build configuration list for PBXNativeTarget "DouyinLiveTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14BFA1F92B9F7A9400A9A551 /* Debug */,
+				14BFA1FA2B9F7A9400A9A551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		743E6968299B1E62007A1F7B /* Alamofire */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+		F57B4A5E299B1F4100A3C7B3 /* KeychainSwift */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		743E6969299B1E62007A1F7B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743E6968299B1E62007A1F7B /* Alamofire */;
+			productName = Alamofire;
+		};
+		F57B4A5F299B1F4100A3C7B3 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F57B4A5E299B1F4100A3C7B3 /* KeychainSwift */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 14BFA1D22B9F7A8A00A9A551 /* Project object */;
+}
