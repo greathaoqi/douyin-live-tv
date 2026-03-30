@@ -44,11 +44,11 @@ Plans:
   3. Session persists across app restarts
   4. Token refresh is handled automatically when expired
   5. API client can make authenticated requests to Douyin endpoints
-**Plans:** 4 plans
+**Plans:** 1/4 plans executed
 **UI hint**: yes
 
 Plans:
-- [ ] 02-01-PLAN.md — Add KeychainSwift dependency, create domain models, implement TokenStorage
+- [x] 02-01-PLAN.md — Add KeychainSwift dependency, create domain models, implement TokenStorage
 - [ ] 02-02-PLAN.md — Create API client network layer with QR generation
 - [ ] 02-03-PLAN.md — Implement AuthService with QR login flow and automatic token refresh
 - [ ] 02-04-PLAN.md — Create LoginView UI and integrate app routing
@@ -117,7 +117,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Project Setup & Core Infrastructure | 2/3 | Complete    | 2026-03-30 |
-| 2. Authentication & API Layer | 0/4 | Not started | - |
+| 2. Authentication & API Layer | 1/4 | In Progress|  |
 | 3. tvOS Foundation & Navigation | 0/0 | Not started | - |
 | 4. Live Room Core Display | 0/0 | Not started | - |
 | 5. Favorites Management | 0/0 | Not started | - |
