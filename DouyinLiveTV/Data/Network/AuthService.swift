@@ -100,10 +100,14 @@ public actor AuthService {
             return currentToken
         }
 
-        // TODO: Implement refresh token endpoint once endpoint details are known
-        // For now, we have the infrastructure in place - this will be updated when we
-        // have the actual Douyin API endpoint for token refresh
-        throw APIError.unauthorized
+        let response = try await apiClient.request(.refreshToken(refreshToken: currentToken.refreshToken))
+        let newToken = AuthToken(
+            accessToken: response.accessToken,
+            refreshToken: response.refreshToken,
+            expiresAt: response.expiresAt
+        )
+        try tokenStorage.save(newToken)
+        return newToken
     }
 
     // MARK: - Authenticated Requests
