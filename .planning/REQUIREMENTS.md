@@ -21,10 +21,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Authentication
 
-- [ ] **AUTH-01**: User can log into Douyin account via web view
-- [ ] **AUTH-02**: Authentication tokens stored securely in Keychain
-- [ ] **AUTH-03**: Session persists across app restarts
-- [ ] **AUTH-04**: Token refresh handled automatically
+- [x] **AUTH-01**: User can log into Douyin account via web view
+- [x] **AUTH-02**: Authentication tokens stored securely in Keychain
+- [x] **AUTH-03**: Session persists across app restarts
+- [x] **AUTH-04**: Token refresh handled automatically
 
 ### Live Room Display (Core Feature)
 
@@ -91,10 +91,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | UX-07 | Phase 3 | Pending |
 | UX-08 | Phase 3 | Pending |
 | UX-09 | Phase 3 | Pending |
-| AUTH-01 | Phase 2 | Pending |
-| AUTH-02 | Phase 2 | Pending |
-| AUTH-03 | Phase 2 | Pending |
-| AUTH-04 | Phase 2 | Pending |
+| AUTH-01 | Phase 2 | Complete |
+| AUTH-02 | Phase 2 | Complete |
+| AUTH-03 | Phase 2 | Complete |
+| AUTH-04 | Phase 2 | Complete |
 | LIVE-01 | Phase 4 | Pending |
 | LIVE-02 | Phase 4 | Pending |
 | LIVE-03 | Phase 4 | Pending |
