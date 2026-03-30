@@ -13,6 +13,9 @@
 		14BFA2002B9F7B00000A9A551 /* LiveRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1FB2B9F7B00000A9A551 /* LiveRoom.swift */; };
 		14BFA2012B9F7B00000A9A551 /* LiveStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1FC2B9F7B00000A9A551 /* LiveStats.swift */; };
 		14BFA2022B9F7B00000A9A551 /* ModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */; };
+		14BFA2052B9F7B00000A9A551 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2032B9F7B00000A9A551 /* AuthToken.swift */; };
+		14BFA2062B9F7B00000A9A551 /* LoginQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2042B9F7B00000A9A551 /* LoginQRCode.swift */; };
+		F57B4A5F299B1F4100A3C7B3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F57B4A5F299B1F4100A3C7B3 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 		14BFA1FB2B9F7B00000A9A551 /* LiveRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/LiveRoom.swift"; sourceTree = "<group>"; };
 		14BFA1FC2B9F7B00000A9A551 /* LiveStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/LiveStats.swift"; sourceTree = "<group>"; };
 		14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTests.swift; sourceTree = "<group>"; };
+		14BFA2032B9F7B00000A9A551 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/AuthToken.swift"; sourceTree = "<group>"; };
+		14BFA2042B9F7B00000A9A551 /* LoginQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/LoginQRCode.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57B4A5F299B1F4100A3C7B3 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F57B4A5F299B1F4100A3C7B3 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +106,8 @@
 			children = (
 				14BFA1FB2B9F7B00000A9A551 /* LiveRoom.swift */,
 				14BFA1FC2B9F7B00000A9A551 /* LiveStats.swift */,
+				14BFA2032B9F7B00000A9A551 /* AuthToken.swift */,
+				14BFA2042B9F7B00000A9A551 /* LoginQRCode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,6 +238,8 @@
 				14BFA1E82B9F7A8A00A9A551 /* ContentView.swift in Sources */,
 				14BFA2002B9F7B00000A9A551 /* LiveRoom.swift in Sources */,
 				14BFA2012B9F7B00000A9A551 /* LiveStats.swift in Sources */,
+				14BFA2052B9F7B00000A9A551 /* AuthToken.swift in Sources */,
+				14BFA2062B9F7B00000A9A551 /* LoginQRCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
