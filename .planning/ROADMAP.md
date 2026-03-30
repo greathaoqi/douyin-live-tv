@@ -67,8 +67,13 @@ Plans:
   7. All focus targets meet minimum 88x88pt size
   8. App respects system dark mode setting
   9. App handles background/foreground transitions correctly (pauses video, refreshes data)
-**Plans:** TBD
+**Plans:** 3 plans
 **UI hint**: yes
+
+Plans:
+- [ ] 03-01-PLAN.md — Create app lifecycle observation infrastructure
+- [ ] 03-02-PLAN.md — Create main tab-based navigation structure
+- [ ] 03-03-PLAN.md — Enable dictation and full build verification
 
 ### Phase 4: Live Room Core Display
 **Goal:** Users can view a live room with statistics overlay and live video preview
@@ -117,12 +122,12 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Project Setup & Core Infrastructure | 2/3 | Complete    | 2026-03-30 |
-| 2. Authentication & API Layer | 4/4 | Complete   | 2026-03-30 |
-| 3. tvOS Foundation & Navigation | 0/0 | Not started | - |
+| 2. Authentication & API Layer | 4/4 | Complete    | 2026-03-30 |
+| 3. tvOS Foundation & Navigation | 0/3 | Not started | - |
 | 4. Live Room Core Display | 0/0 | Not started | - |
 | 5. Favorites Management | 0/0 | Not started | - |
 | 6. Refresh & Quality of Life | 0/0 | Not started | - |
 
 ---
 
-*Last updated: 2026-03-30 after planning*
+*Last updated: 2026-03-31 after planning*
