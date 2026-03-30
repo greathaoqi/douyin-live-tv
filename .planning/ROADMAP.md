@@ -9,7 +9,7 @@
 ## Phases
 
 - [x] **Phase 1: Project Setup & Core Infrastructure** - Create Xcode project, establish architecture layers, configure dependencies (completed 2026-03-30)
-- [ ] **Phase 2: Authentication & API Layer** - Implement secure authentication, Douyin API client, token management
+- [x] **Phase 2: Authentication & API Layer** - Implement secure authentication, Douyin API client, token management (completed 2026-03-30)
 - [ ] **Phase 3: tvOS Foundation & Navigation** - Build basic UI structure with focus-based navigation, tab bar, tvOS HIG compliance
 - [ ] **Phase 4: Live Room Core Display** - Implement main live room screen with statistics overlay and video playback
 - [ ] **Phase 5: Favorites Management** - Add ability to add, view, delete, and quickly access favorite rooms
@@ -44,14 +44,14 @@ Plans:
   3. Session persists across app restarts
   4. Token refresh is handled automatically when expired
   5. API client can make authenticated requests to Douyin endpoints
-**Plans:** 3/4 plans executed
+**Plans:** 4/4 plans complete
 **UI hint**: yes
 
 Plans:
 - [x] 02-01-PLAN.md — Add KeychainSwift dependency, create domain models, implement TokenStorage
 - [x] 02-02-PLAN.md — Create API client network layer with QR generation
 - [x] 02-03-PLAN.md — Implement AuthService with QR login flow and automatic token refresh
-- [ ] 02-04-PLAN.md — Create LoginView UI and integrate app routing
+- [x] 02-04-PLAN.md — Create LoginView UI and integrate app routing
 
 ### Phase 3: tvOS Foundation & Navigation
 **Goal:** App follows tvOS Human Interface Guidelines with proper focus-based navigation
@@ -117,7 +117,7 @@ Plans:
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Project Setup & Core Infrastructure | 2/3 | Complete    | 2026-03-30 |
-| 2. Authentication & API Layer | 3/4 | In Progress|  |
+| 2. Authentication & API Layer | 4/4 | Complete   | 2026-03-30 |
 | 3. tvOS Foundation & Navigation | 0/0 | Not started | - |
 | 4. Live Room Core Display | 0/0 | Not started | - |
 | 5. Favorites Management | 0/0 | Not started | - |
