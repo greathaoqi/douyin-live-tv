@@ -140,7 +140,7 @@ private extension LoginView {
 
     func errorText(_ message: String) -> some View {
         Text(message)
-            .font(.system(size: 28, weight: .medium))
+            .font(.system(size: 28, weight: .regular))
             .foregroundColor(.systemRed)
             .multilineTextAlignment(.center)
     }
