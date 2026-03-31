@@ -18,13 +18,13 @@ struct MainTabView: View {
                 }
                 .tag(Tab.watchLive)
 
-            FavoritesView()
+            FavoritesView(selectedTab: $selectedTab)
                 .tabItem {
                     Label(Tab.favorites.title, systemImage: Tab.favorites.systemImage)
                 }
                 .tag(Tab.favorites)
 
-            AddRoomView()
+            AddRoomView(selectedTab: $selectedTab)
                 .tabItem {
                     Label(Tab.addRoom.title, systemImage: Tab.addRoom.systemImage)
                 }

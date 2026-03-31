@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    @Binding var selectedTab: Tab
+
     var body: some View {
         VStack(spacing: 24) {
             Text("No Favorites Yet")
@@ -23,5 +25,5 @@ struct FavoritesView: View {
 }
 
 #Preview {
-    FavoritesView()
+    FavoritesView(selectedTab: .constant(.favorites))
 }
