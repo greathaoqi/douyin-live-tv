@@ -16,6 +16,7 @@ public class LiveRoomViewModel: ObservableObject {
     private let playerService: PlayerService
     private let liveStatsService: LiveStatsService
     private let appLifecycleService: AppLifecycleService
+    public let initialRoomId: String?
 
     @Published public private(set) var stats: LiveStats?
     @Published public private(set) var showOverlay: Bool = true
@@ -28,11 +29,13 @@ public class LiveRoomViewModel: ObservableObject {
     public init(
         playerService: PlayerService,
         liveStatsService: LiveStatsService,
-        appLifecycleService: AppLifecycleService
+        appLifecycleService: AppLifecycleService,
+        initialRoomId: String? = nil
     ) {
         self.playerService = playerService
         self.liveStatsService = liveStatsService
         self.appLifecycleService = appLifecycleService
+        self.initialRoomId = initialRoomId
 
         subscribeToAppLifecycle()
     }

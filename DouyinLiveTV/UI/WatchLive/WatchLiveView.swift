@@ -22,14 +22,15 @@ struct WatchLiveView: View {
     @State private var loadedRoomId: String? = nil
 
     // Initialize with dependencies from DependencyContainer
-    init() {
+    init(initialRoomId: String? = nil) {
         let playerService = DependencyContainer.shared.playerService
         let liveStatsService = DependencyContainer.shared.liveStatsService
         let appLifecycleService = DependencyContainer.shared.appLifecycleService
         _viewModel = StateObject(wrappedValue: LiveRoomViewModel(
             playerService: playerService,
             liveStatsService: liveStatsService,
-            appLifecycleService: appLifecycleService
+            appLifecycleService: appLifecycleService,
+            initialRoomId: initialRoomId
         ))
     }
 
@@ -91,11 +92,19 @@ struct WatchLiveView: View {
             }
         }
         .onAppear {
-            // Load last viewed room from UserDefaults if available
-            if let lastRoomId = UserDefaults.standard.string(forKey: "LastViewedRoomId"),
+            // If we have an initial room ID from direct navigation (favorites selection or app launch), fetch it
+            if let initialRoomId = viewModel.initialRoomId {
+                loadedRoomId = initialRoomId
+                // Note: stream URL will come from favorites selection when we integrate navigation
+                // For now, just fetch stats - stream URL will be handled in integration
+                Task {
+                    await viewModel.loadRoom(roomId: initialRoomId, streamURL: nil)
+                }
+            } else if let lastRoomId = UserDefaults.standard.string(forKey: "LastViewedRoomId"),
                let lastStreamURLString = UserDefaults.standard.string(forKey: "LastViewedStreamURL"),
                let lastStreamURL = URL(string: lastStreamURLString),
                let lastRoomTitle = UserDefaults.standard.string(forKey: "LastViewedRoomTitle") {
+                // Otherwise, fall back to last viewed room from UserDefaults (legacy)
                 loadedRoomId = lastRoomId
                 viewModel.roomTitle = lastRoomTitle
                 Task {
