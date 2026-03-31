@@ -13,18 +13,21 @@ struct LiveStats: Codable, Equatable {
     let totalGiftValue: Int
     let isLive: Bool
     let startTime: Date?
+    let streamURL: String?
 
     init(
         viewerCount: Int,
         likeCount: Int,
         totalGiftValue: Int,
         isLive: Bool,
-        startTime: Date?
+        startTime: Date?,
+        streamURL: String? = nil
     ) {
         self.viewerCount = viewerCount
         self.likeCount = likeCount
         self.totalGiftValue = totalGiftValue
         self.isLive = isLive
         self.startTime = startTime
+        self.streamURL = streamURL
     }
 }
