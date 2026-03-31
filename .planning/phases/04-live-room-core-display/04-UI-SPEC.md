@@ -19,9 +19,11 @@ created: 2026-03-31
 |----------|-------|
 | Tool | none (native SwiftUI) |
 | Preset | not applicable (tvOS native) |
-| Component library | SwiftUI native |
+| Component library | SwiftUI native — manual design system implementation (no third-party registry) |
 | Icon library | SF Symbols (system) |
 | Font | System San Francisco (tvOS default) |
+
+**Explicit declaration:** This is a native SwiftUI project with manual design system implementation. No shadcn or other third-party component registry is used. All components are built from scratch using native SwiftUI APIs.
 
 ---
 
@@ -50,10 +52,8 @@ Following CONTEXT.md decisions for couch-distance readability:
 | Role | Size | Weight | Line Height |
 |------|------|--------|-------------|
 | Body | 28px | regular (400) | 1.5 |
-| Label (stats labels) | 36px | regular (400) | 1.2 |
+| Label (stats labels) / Heading (room title) / Button | 36px | regular (400) for labels, semibold (600) for heading/button | 1.2 |
 | Value (stats values) | 48px | semibold (600) | 1.1 |
-| Heading (room title) | 36px | semibold (600) | 1.2 |
-| Button | 34px | semibold (600) | 1.2 |
 
 ---
 
