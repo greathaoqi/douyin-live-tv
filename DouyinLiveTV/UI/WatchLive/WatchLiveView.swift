@@ -121,6 +121,10 @@ struct WatchLiveView: View {
                 // This is temporary until Phase 5 with SwiftData favorites
             }
         }
+        .refreshable {
+            await viewModel.refresh()
+        }
+        .environment(\.isEnabled, viewModel.stats != nil)
     }
 
     // Empty state view when no room selected
