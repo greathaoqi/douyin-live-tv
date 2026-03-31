@@ -14,6 +14,7 @@ class LiveRoom {
     var title: String
     var nickname: String
     var avatarUrl: String?
+    var streamURL: String?
     var isLive: Bool
     var lastChecked: Date
     var lastViewed: Date?
@@ -23,6 +24,7 @@ class LiveRoom {
         title: String,
         nickname: String,
         avatarUrl: String? = nil,
+        streamURL: String? = nil,
         isLive: Bool = false,
         lastChecked: Date = Date(),
         lastViewed: Date? = nil
@@ -31,6 +33,7 @@ class LiveRoom {
         self.title = title
         self.nickname = nickname
         self.avatarUrl = avatarUrl
+        self.streamURL = streamURL
         self.isLive = isLive
         self.lastChecked = lastChecked
         self.lastViewed = lastViewed
