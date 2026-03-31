@@ -12,7 +12,7 @@
 - [x] **Phase 2: Authentication & API Layer** - Implement secure authentication, Douyin API client, token management (completed 2026-03-30)
 - [x] **Phase 3: tvOS Foundation & Navigation** - Build basic UI structure with focus-based navigation, tab bar, tvOS HIG compliance (completed 2026-03-31)
 - [x] **Phase 4: Live Room Core Display** - Implement main live room screen with statistics overlay and video playback (completed 2026-03-31)
-- [ ] **Phase 5: Favorites Management** - Add ability to add, view, delete, and quickly access favorite rooms
+- [x] **Phase 5: Favorites Management** - Add ability to add, view, delete, and quickly access favorite rooms (completed 2026-03-31)
 - [ ] **Phase 6: Refresh & Quality of Life** - Implement manual/automatic refresh and polish tvOS-specific features
 
 ## Phase Details
@@ -28,7 +28,6 @@
   4. Project builds successfully with no errors
   5. Core domain models defined (LiveRoom, LiveStats)
 **Plans:** 3/3 plans complete
-
 Plans:
 - [x] 01-01-PLAN.md — Create Xcode project and four-layer folder structure with dependencies
 - [x] 01-02-PLAN.md — Define core domain models (LiveRoom, LiveStats) with TDD
@@ -106,7 +105,7 @@ Plans:
   4. User can quickly select a favorite room to monitor
   5. Last viewed room is remembered and opened automatically on app launch
   6. Favorites persist across app restarts via SwiftData
-**Plans:** 4/5 plans executed
+**Plans:** 4/6 plans complete
 **UI hint**: yes
 
 Plans:
@@ -127,8 +126,13 @@ Plans:
   3. Uses system BackgroundTasks framework for background refresh
   4. Top Shelf extension provides quick access to favorites from Apple TV home screen
   5. App icon has correct sizing configured in Xcode project
-**Plans:** TBD
+**Plans:** 3 plans
 **UI hint**: yes
+
+Plans:
+- [ ] 06-01-PLAN.md — Implement manual pull-to-refresh on WatchLiveView
+- [ ] 06-02-PLAN.md — Create RefreshService with BackgroundTasks automatic refresh
+- [ ] 06-03-PLAN.md — Add Top Shelf extension and configure app icon
 
 ## Progress
 
@@ -138,9 +142,9 @@ Plans:
 | 2. Authentication & API Layer | 4/4 | Complete    | 2026-03-30 |
 | 3. tvOS Foundation & Navigation | 0/4 | Complete    | 2026-03-31 |
 | 4. Live Room Core Display | 2/3 | Complete    | 2026-03-31 |
-| 5. Favorites Management | 3/5 | In Progress|  |
-| 6. Refresh & Quality of Life | 0/0 | Not started | -
+| 5. Favorites Management | 3/5 | Complete    | 2026-03-31 |
+| 6. Refresh & Quality of Life | 0/3 | Not started | -
 
 ---
 
-*Last updated: 2026-03-31 after revision*
+*Last updated: 2026-03-31 after planning*
