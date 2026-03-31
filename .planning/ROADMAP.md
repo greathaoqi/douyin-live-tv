@@ -146,11 +146,11 @@ Plans:
   4. Automatic refresh successfully updates favorite room live statuses
   5. Top Shelf extension compiles correctly and deep-linking opens selected room in main app
 **Gap Closure:** Fixes integration gaps from v1.0 milestone audit
-**Plans:** 0/3 plans complete
+**Plans:** 1/3 plans executed
 **UI hint**: yes
 
 Plans:
-- [ ] 07-01-PLAN.md — LiveRoom model + LiveStatsService auth + DependencyContainer
+- [x] 07-01-PLAN.md — LiveRoom model + LiveStatsService auth + DependencyContainer
 - [ ] 07-02-PLAN.md — FavoritesService + RefreshService streamURL updates
 - [ ] 07-03-PLAN.md — Top Shelf compilation + deep link handling
 
