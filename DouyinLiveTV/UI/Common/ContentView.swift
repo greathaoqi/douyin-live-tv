@@ -38,17 +38,7 @@ private extension ContentView {
     }
 
     var mainUI: some View {
-        VStack(spacing: 32) {
-            Image(systemName: "checkmark.circle.fill")
-                .imageScale(.large)
-                .foregroundStyle(.green)
-            Text("Authenticated")
-                .font(.system(size: 60, weight: .bold))
-            Text("Welcome to Douyin Live TV")
-                .font(.system(size: 28, weight: .regular))
-                .foregroundColor(.secondary)
-        }
-        .padding()
+        MainTabView()
     }
 }
 

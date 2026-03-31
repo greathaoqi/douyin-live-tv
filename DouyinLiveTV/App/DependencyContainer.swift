@@ -21,6 +21,9 @@ class DependencyContainer {
     public let authService: AuthService
     public let authStateManager: AuthStateManager
 
+    // App lifecycle dependencies
+    public let appLifecycleService: AppLifecycleService
+
     private init() {
         // Configure SwiftData model container
         do {
@@ -28,6 +31,9 @@ class DependencyContainer {
         } catch {
             fatalError("Failed to initialize SwiftData ModelContainer: \(error)")
         }
+
+        // Initialize app lifecycle dependencies
+        self.appLifecycleService = AppLifecycleService()
 
         // Initialize authentication dependencies
         self.tokenStorage = TokenStorage()

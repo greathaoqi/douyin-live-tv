@@ -17,6 +17,15 @@
 		14BFA2062B9F7B00000A9A551 /* LoginQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2042B9F7B00000A9A551 /* LoginQRCode.swift */; };
 		14BFA2092B9F7B00000A9A551 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2072B9F7B00000A9A551 /* TokenStorage.swift */; };
 		14BFA2112B9F7B00000A9A551 /* TokenStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2102B9F7B00000A9A551 /* TokenStorageTests.swift */; };
+		14BFA2122B9F7B00000A9A551 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2122B9F7B00000A9A551 /* DependencyContainer.swift */; };
+		14BFA2142B9F7B00000A9A551 /* AddRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2132B9F7B00000A9A551 /* AddRoomView.swift */; };
+		14BFA2162B9F7B00000A9A551 /* AuthStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2162B9F7B00000A9A551 /* AuthStateManager.swift */; };
+		14BFA2182B9F7B00000A9A551 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2172B9F7B00000A9A551 /* LoginView.swift */; };
+		14BFA2202B9F7B00000A9A551 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2192B9F7B00000A9A551 /* LoginViewModel.swift */; };
+		14BFA2222B9F7B00000A9A551 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2212B9F7B00000A9A551 /* AuthService.swift */; };
+		14BFA2242B9F7B00000A9A551 /* DouyinAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2232B9F7B00000A9A551 /* DouyinAPIEndpoints.swift */; };
+		14BFA2262B9F7B00000A9A551 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2252B9F7B00000A9A551 /* Endpoint.swift */; };
+		14BFA2282B9F7B00000A9A551 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2272B9F7B00000A9A551 /* QRCodeGenerator.swift */; };
 		F57B4A5F299B1F4100A3C7B3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F57B4A5F299B1F4100A3C7B3 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +53,15 @@
 		14BFA2042B9F7B00000A9A551 /* LoginQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Models/LoginQRCode.swift"; sourceTree = "<group>"; };
 		14BFA2072B9F7B00000A9A551 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Keychain/TokenStorage.swift"; sourceTree = "<group>"; };
 		14BFA2102B9F7B00000A9A551 /* TokenStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TokenStorageTests.swift"; sourceTree = "<group>"; };
+		14BFA2122B9F7B00000A9A551 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/DependencyContainer.swift"; sourceTree = "<group>"; };
+		14BFA2132B9F7B00000A9A551 /* AddRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/AddRoom/AddRoomView.swift"; sourceTree = "<group>"; };
+		14BFA2162B9F7B00000A9A551 /* AuthStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/AuthStateManager.swift"; sourceTree = "<group>"; };
+		14BFA2172B9F7B00000A9A551 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/Login/LoginView.swift"; sourceTree = "<group>"; };
+		14BFA2192B9F7B00000A9A551 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/Login/LoginViewModel.swift"; sourceTree = "<group>"; };
+		14BFA2212B9F7B00000A9A551 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Network/AuthService.swift"; sourceTree = "<group>"; };
+		14BFA2232B9F7B00000A9A551 /* DouyinAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Network/DouyinAPIEndpoints.swift"; sourceTree = "<group>"; };
+		14BFA2252B9F7B00000A9A551 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Network/Endpoint.swift"; sourceTree = "<group>"; };
+		14BFA2272B9F7B00000A9A551 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Network/QRCodeGenerator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +102,8 @@
 		14BFA1D52B9F7A8A00A9A551 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				14BFA2162B9F7B00000A9A551 /* AuthStateManager.swift */,
+				14BFA2122B9F7B00000A9A551 /* DependencyContainer.swift */,
 				14BFA1E42B9F7A8A00A9A551 /* DouyinLiveTVApp.swift */,
 			);
 			path = App;
@@ -92,9 +112,37 @@
 		14BFA1D62B9F7A8A00A9A551 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				14BFA2152B9F7B00000A9A551 /* AddRoom */,
+				14BFA2292B9F7B00000A9A551 /* Login */,
 				14BFA1E72B9F7A8A00A9A551 /* ContentView.swift */,
+				14BFA2302B9F7B00000A9A551 /* Common */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		14BFA2152B9F7B00000A9A551 /* AddRoom */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2132B9F7B00000A9A551 /* AddRoomView.swift */,
+			);
+			path = "UI/AddRoom";
+			sourceTree = "<group>";
+		};
+		14BFA2292B9F7B00000A9A551 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2172B9F7B00000A9A551 /* LoginView.swift */,
+				14BFA2192B9F7B00000A9A551 /* LoginViewModel.swift */,
+			);
+			path = "UI/Login";
+			sourceTree = "<group>";
+		};
+		14BFA2302B9F7B00000A9A551 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA1E72B9F7A8A00A9A551 /* ContentView.swift */,
+			);
+			path = "UI/Common";
 			sourceTree = "<group>";
 		};
 		14BFA1D72B9F7A8A00A9A551 /* Domain */ = {
@@ -120,8 +168,20 @@
 			isa = PBXGroup;
 			children = (
 				14BFA2082B9F7B00000A9A551 /* Keychain */,
+				14BFA2312B9F7B00000A9A551 /* Network */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		14BFA2312B9F7B00000A9A551 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2212B9F7B00000A9A551 /* AuthService.swift */,
+				14BFA2232B9F7B00000A9A551 /* DouyinAPIEndpoints.swift */,
+				14BFA2252B9F7B00000A9A551 /* Endpoint.swift */,
+				14BFA2272B9F7B00000A9A551 /* QRCodeGenerator.swift */,
+			);
+			path = "Data/Network";
 			sourceTree = "<group>";
 		};
 		14BFA2082B9F7B00000A9A551 /* Keychain */ = {
@@ -249,12 +309,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BFA1E52B9F7A8A00A9A551 /* DouyinLiveTVApp.swift in Sources */,
+				14BFA2122B9F7B00000A9A551 /* DependencyContainer.swift in Sources */,
+				14BFA2162B9F7B00000A9A551 /* AuthStateManager.swift in Sources */,
 				14BFA1E82B9F7A8A00A9A551 /* ContentView.swift in Sources */,
+				14BFA2142B9F7B00000A9A551 /* AddRoomView.swift in Sources */,
+				14BFA2182B9F7B00000A9A551 /* LoginView.swift in Sources */,
+				14BFA2202B9F7B00000A9A551 /* LoginViewModel.swift in Sources */,
 				14BFA2002B9F7B00000A9A551 /* LiveRoom.swift in Sources */,
 				14BFA2012B9F7B00000A9A551 /* LiveStats.swift in Sources */,
 				14BFA2052B9F7B00000A9A551 /* AuthToken.swift in Sources */,
 				14BFA2062B9F7B00000A9A551 /* LoginQRCode.swift in Sources */,
 				14BFA2092B9F7B00000A9A551 /* TokenStorage.swift in Sources */,
+				14BFA2222B9F7B00000A9A551 /* AuthService.swift in Sources */,
+				14BFA2242B9F7B00000A9A551 /* DouyinAPIEndpoints.swift in Sources */,
+				14BFA2262B9F7B00000A9A551 /* Endpoint.swift in Sources */,
+				14BFA2282B9F7B00000A9A551 /* QRCodeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
