@@ -32,6 +32,9 @@ class DependencyContainer {
     // Favorites dependencies
     public let favoritesService: FavoritesService
 
+    // Automatic refresh dependencies
+    public let refreshService: RefreshService
+
     private init() {
         // Configure SwiftData model container
         do {
@@ -55,12 +58,20 @@ class DependencyContainer {
 
         // Initialize live playback dependencies
         self.playerService = PlayerService()
-        self.liveStatsService = LiveStatsService(apiClient: self.apiClient)
+        self.liveStatsService = LiveStatsService(apiClient: self.apiClient, authService: self.authService)
 
         // Initialize favorites dependencies
         self.favoritesService = FavoritesService(
             modelContainer: self.modelContainer,
             liveStatsService: self.liveStatsService
+        )
+
+        // Initialize automatic refresh dependencies
+        self.refreshService = RefreshService(
+            favoritesService: self.favoritesService,
+            liveStatsService: self.liveStatsService,
+            appLifecycleService: self.appLifecycleService,
+            modelContainer: self.modelContainer
         )
     }
 }
