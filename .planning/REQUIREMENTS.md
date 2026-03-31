@@ -30,10 +30,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **LIVE-01**: Display basic statistics: viewer count, likes, total gifts
 - [x] **LIVE-02**: Live video preview playback via AVPlayer
-- [ ] **LIVE-03**: Stats overlay displayed on top of video
-- [ ] **LIVE-04**: Large text sizing for stats (visible from couch distance)
-- [ ] **LIVE-05**: Visual live/offline status indicator
-- [ ] **LIVE-06**: Toggle between overlay mode and full-screen video
+- [x] **LIVE-03**: Stats overlay displayed on top of video
+- [x] **LIVE-04**: Large text sizing for stats (visible from couch distance)
+- [x] **LIVE-05**: Visual live/offline status indicator
+- [x] **LIVE-06**: Toggle between overlay mode and full-screen video
 - [x] **LIVE-07**: Picture in Picture (PiP) support for video playback
 
 ### Favorites Management
@@ -97,10 +97,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | AUTH-04 | Phase 2 | Complete |
 | LIVE-01 | Phase 4 | Complete |
 | LIVE-02 | Phase 4 | Complete |
-| LIVE-03 | Phase 4 | Pending |
-| LIVE-04 | Phase 4 | Pending |
-| LIVE-05 | Phase 4 | Pending |
-| LIVE-06 | Phase 4 | Pending |
+| LIVE-03 | Phase 4 | Complete |
+| LIVE-04 | Phase 4 | Complete |
+| LIVE-05 | Phase 4 | Complete |
+| LIVE-06 | Phase 4 | Complete |
 | LIVE-07 | Phase 4 | Complete |
 | FAV-01 | Phase 5 | Pending |
 | FAV-02 | Phase 5 | Pending |

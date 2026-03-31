@@ -88,10 +88,10 @@ Plans:
   5. Clear visual indicator shows whether room is live/offline
   6. User can toggle between overlay mode and full-screen video
   7. Picture in Picture (PiP) support works for video playback
-**Plans:** 1/3 plans executed
+**Plans:** 2/3 plans executed
 Plans:
 - [x] 04-01-PLAN.md — Create core services (PlayerService, LiveStatsService) and register in container
-- [ ] 04-02-PLAN.md — Create view model and UI components (StatisticsOverlay, OverlayToggleButton)
+- [x] 04-02-PLAN.md — Create view model and UI components (StatisticsOverlay, OverlayToggleButton)
 - [ ] 04-03-PLAN.md — Implement WatchLiveView with full integration and verification
 **UI hint**: yes
 
@@ -129,7 +129,7 @@ Plans:
 | 1. Project Setup & Core Infrastructure | 2/3 | Complete    | 2026-03-30 |
 | 2. Authentication & API Layer | 4/4 | Complete    | 2026-03-30 |
 | 3. tvOS Foundation & Navigation | 0/4 | Complete    | 2026-03-31 |
-| 4. Live Room Core Display | 1/3 | In Progress|  |
+| 4. Live Room Core Display | 2/3 | In Progress|  |
 | 5. Favorites Management | 0/0 | Not started | - |
 | 6. Refresh & Quality of Life | 0/0 | Not started | -
 
