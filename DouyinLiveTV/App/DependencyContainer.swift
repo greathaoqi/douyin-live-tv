@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftData
+import DouyinLiveTVDomain
 
 class DependencyContainer {
     static let shared = DependencyContainer()
@@ -23,6 +24,10 @@ class DependencyContainer {
 
     // App lifecycle dependencies
     public let appLifecycleService: AppLifecycleService
+
+    // Live playback dependencies
+    public let playerService: PlayerService
+    public let liveStatsService: LiveStatsService
 
     private init() {
         // Configure SwiftData model container
@@ -44,5 +49,9 @@ class DependencyContainer {
             apiClient: self.apiClient,
             authStateManager: self.authStateManager
         )
+
+        // Initialize live playback dependencies
+        self.playerService = PlayerService()
+        self.liveStatsService = LiveStatsService(apiClient: self.apiClient)
     }
 }
