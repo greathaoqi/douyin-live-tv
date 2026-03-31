@@ -93,3 +93,23 @@ public extension Endpoint where Response == RefreshTokenResponse {
         )
     }
 }
+
+public extension Endpoint where Response == LiveStats {
+    static func getLiveStats(
+        roomId: String,
+        baseURL: URL = URL(string: "https://api.douyin.com")!
+    ) -> Endpoint<LiveStats> {
+        let headers = [
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        ]
+        return Endpoint<LiveStats>(
+            baseURL: baseURL,
+            path: "/live/room/stats",
+            method: .get,
+            parameters: ["room_id": roomId],
+            headers: headers,
+            body: nil
+        )
+    }
+}
