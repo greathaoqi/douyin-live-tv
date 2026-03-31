@@ -12,16 +12,32 @@ Conveniently monitor Douyin live room statistics on the big TV screen, keep it s
 
 ### Validated
 
-(None yet — ship to validate)
+- ✓ **AUTH-01**: Support Douyin account login to access live data — v1.0
+- ✓ **AUTH-02**: Authentication tokens stored securely in Keychain — v1.0
+- ✓ **AUTH-03**: Session persists across app restarts — v1.0
+- ✓ **AUTH-04**: Token refresh handled automatically — v1.0
+- ✓ **LIVE-01**: Display basic statistics: viewer count, likes, total gifts — v1.0
+- ✓ **LIVE-02**: Live video preview playback via AVPlayer — v1.0
+- ✓ **LIVE-03**: Stats overlay displayed on top of video — v1.0
+- ✓ **LIVE-04**: Large text sizing for stats (visible from couch distance) — v1.0
+- ✓ **LIVE-05**: Visual live/offline status indicator — v1.0
+- ✓ **LIVE-06**: Toggle between overlay mode and full-screen video — v1.0
+- ✓ **LIVE-07**: Picture in Picture (PiP) support for video playback — v1.0
+- ✓ **FAV-01**: User can add new room by entering room ID or URL — v1.0
+- ✓ **FAV-02**: User can view list of saved favorite rooms — v1.0
+- ✓ **FAV-03**: User can delete rooms from favorites — v1.0
+- ✓ **FAV-04**: User can quickly select a favorite room to monitor — v1.0
+- ✓ **FAV-05**: Last viewed room is remembered and opened on app launch — v1.0
+- ✓ **FAV-06**: Favorites persist across app restarts via SwiftData — v1.0
+- ✓ **REFRESH-01**: Manual pull-to-refresh for immediate stats update — v1.0
+- ✓ **REFRESH-02**: Automatic refresh every 30 minutes when possible — v1.0
+- ✓ **REFRESH-03**: Uses system BackgroundTasks framework for background refresh — v1.0
+- ✓ **QOL-01**: Top Shelf extension provides quick access to favorites from Apple TV home screen — v1.0
+- ✓ **QOL-02**: App icon has correct sizing configured in Xcode project — v1.0
 
 ### Active
 
-- [ ] Support Douyin account login to access live data
-- [ ] Display basic statistics for single live room: viewer count, likes, gifts
-- [ ] Show live video preview alongside stats overlay
-- [ ] Save favorite rooms for quick access and switching
-- [ ] Support manual refresh and 30-minute automatic refresh
-- [ ] Add new rooms by entering room ID or URL
+*(No active requirements — v1.0 complete. Start new milestone for additional features.)*
 
 ### Out of Scope
 
@@ -48,8 +64,11 @@ Personal project for monitoring Douyin live data on Apple TV. No existing codeba
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Single room monitoring only | Aligns with user requirement, simplifies UI and code | — Pending |
-| Manual/30min automatic refresh | User preference, reduces API calls | — Pending |
+| Single room monitoring only | Aligns with user requirement, simplifies UI and code | ✓ Implemented as designed |
+| Manual/30min automatic refresh | User preference, reduces API calls | ✓ Implemented as designed |
+| SwiftData for favorites persistence | Native persistent storage, integrates cleanly with SwiftUI | ✓ Implemented as designed |
+| Manual dependency injection with DependencyContainer | Avoids third-party DI framework complexity for small app | ✓ Implemented as designed |
+| BackgroundTasks for 30-minute background refresh | System-native approach, battery-efficient | ✓ Implemented as designed |
 
 ## Evolution
 
@@ -69,4 +88,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-30 after initialization*
+*Last updated: 2026-03-31 after v1.0 milestone completion*
