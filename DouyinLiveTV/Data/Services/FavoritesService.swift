@@ -56,6 +56,7 @@ public class FavoritesService {
             room.nickname = stats.nickname
             room.avatarUrl = stats.avatarUrl
             room.isLive = stats.isLive
+            room.streamURL = stats.streamURL
             room.lastChecked = Date()
         } else {
             room = LiveRoom(
@@ -67,6 +68,7 @@ public class FavoritesService {
                 lastChecked: Date(),
                 lastViewed: Date()
             )
+            room.streamURL = stats.streamURL
             context.insert(room)
         }
 
