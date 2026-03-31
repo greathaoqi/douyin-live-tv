@@ -38,7 +38,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Favorites Management
 
-- [ ] **FAV-01**: User can add new room by entering room ID or URL
+- [x] **FAV-01**: User can add new room by entering room ID or URL
 - [ ] **FAV-02**: User can view list of saved favorite rooms
 - [ ] **FAV-03**: User can delete rooms from favorites
 - [ ] **FAV-04**: User can quickly select a favorite room to monitor
@@ -102,7 +102,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LIVE-05 | Phase 4 | Complete |
 | LIVE-06 | Phase 4 | Complete |
 | LIVE-07 | Phase 4 | Complete |
-| FAV-01 | Phase 5 | Pending |
+| FAV-01 | Phase 5 | Complete |
 | FAV-02 | Phase 5 | Pending |
 | FAV-03 | Phase 5 | Pending |
 | FAV-04 | Phase 5 | Pending |

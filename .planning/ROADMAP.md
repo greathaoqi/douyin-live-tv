@@ -106,14 +106,14 @@ Plans:
   4. User can quickly select a favorite room to monitor
   5. Last viewed room is remembered and opened automatically on app launch
   6. Favorites persist across app restarts via SwiftData
-**Plans:** 5 plans
+**Plans:** 2/5 plans executed
 **UI hint**: yes
 
 Plans:
 - [ ] 05-00-PLAN.md — Create test scaffolds for unit testing (Wave 0)
 - [x] 05-01-PLAN.md — Create FavoritesService and configure SwiftData ModelContainer
 - [ ] 05-02-PLAN.md — Implement FavoritesView UI with list and delete via edit mode
-- [ ] 05-03-PLAN.md — Implement AddRoomView with URL parsing and add functionality
+- [x] 05-03-PLAN.md — Implement AddRoomView with URL parsing and add functionality
 - [ ] 05-04-PLAN.md — Integrate all components: navigation binding, last room recall
 
 ### Phase 6: Refresh & Quality of Life
@@ -137,7 +137,7 @@ Plans:
 | 2. Authentication & API Layer | 4/4 | Complete    | 2026-03-30 |
 | 3. tvOS Foundation & Navigation | 0/4 | Complete    | 2026-03-31 |
 | 4. Live Room Core Display | 2/3 | Complete    | 2026-03-31 |
-| 5. Favorites Management | 0/5 | Planned     | - |
+| 5. Favorites Management | 2/5 | In Progress|  |
 | 6. Refresh & Quality of Life | 0/0 | Not started | -
 
 ---
