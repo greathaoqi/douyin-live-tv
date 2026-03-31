@@ -13,7 +13,7 @@
 - [x] **Phase 3: tvOS Foundation & Navigation** - Build basic UI structure with focus-based navigation, tab bar, tvOS HIG compliance (completed 2026-03-31)
 - [x] **Phase 4: Live Room Core Display** - Implement main live room screen with statistics overlay and video playback (completed 2026-03-31)
 - [x] **Phase 5: Favorites Management** - Add ability to add, view, delete, and quickly access favorite rooms (completed 2026-03-31)
-- [ ] **Phase 6: Refresh & Quality of Life** - Implement manual/automatic refresh and polish tvOS-specific features
+- [x] **Phase 6: Refresh & Quality of Life** - Implement manual/automatic refresh and polish tvOS-specific features (completed 2026-03-31)
 
 ## Phase Details
 
@@ -126,13 +126,13 @@ Plans:
   3. Uses system BackgroundTasks framework for background refresh
   4. Top Shelf extension provides quick access to favorites from Apple TV home screen
   5. App icon has correct sizing configured in Xcode project
-**Plans:** 3 plans
+**Plans:** 3/3 plans complete
 **UI hint**: yes
 
 Plans:
-- [ ] 06-01-PLAN.md — Implement manual pull-to-refresh on WatchLiveView
-- [ ] 06-02-PLAN.md — Create RefreshService with BackgroundTasks automatic refresh
-- [ ] 06-03-PLAN.md — Add Top Shelf extension and configure app icon
+- [x] 06-01-PLAN.md — Implement manual pull-to-refresh on WatchLiveView
+- [x] 06-02-PLAN.md — Create RefreshService with BackgroundTasks automatic refresh
+- [x] 06-03-PLAN.md — Add Top Shelf extension and configure app icon
 
 ## Progress
 
@@ -143,7 +143,7 @@ Plans:
 | 3. tvOS Foundation & Navigation | 0/4 | Complete    | 2026-03-31 |
 | 4. Live Room Core Display | 2/3 | Complete    | 2026-03-31 |
 | 5. Favorites Management | 3/5 | Complete    | 2026-03-31 |
-| 6. Refresh & Quality of Life | 0/3 | Not started | -
+| 6. Refresh & Quality of Life | 0/3 | Not started |
 
 ---
 

@@ -39,9 +39,9 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Favorites Management
 
 - [x] **FAV-01**: User can add new room by entering room ID or URL
-- [ ] **FAV-02**: User can view list of saved favorite rooms
-- [ ] **FAV-03**: User can delete rooms from favorites
-- [ ] **FAV-04**: User can quickly select a favorite room to monitor
+- [x] **FAV-02**: User can view list of saved favorite rooms
+- [x] **FAV-03**: User can delete rooms from favorites
+- [x] **FAV-04**: User can quickly select a favorite room to monitor
 - [x] **FAV-05**: Last viewed room is remembered and opened on app launch
 - [x] **FAV-06**: Favorites persist across app restarts via SwiftData
 
@@ -53,8 +53,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Quality of Life (tvOS)
 
-- [ ] **QOL-01**: Top Shelf extension for quick access to favorites from home screen
-- [ ] **QOL-02**: Correct tvOS app icon sizing in Xcode project
+- [x] **QOL-01**: Top Shelf extension for quick access to favorites from home screen
+- [x] **QOL-02**: Correct tvOS app icon sizing in Xcode project
 
 ## v2 Requirements
 
@@ -103,16 +103,16 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LIVE-06 | Phase 4 | Complete |
 | LIVE-07 | Phase 4 | Complete |
 | FAV-01 | Phase 5 | Complete |
-| FAV-02 | Phase 5 | Pending |
-| FAV-03 | Phase 5 | Pending |
-| FAV-04 | Phase 5 | Pending |
+| FAV-02 | Phase 5 | Complete |
+| FAV-03 | Phase 5 | Complete |
+| FAV-04 | Phase 5 | Complete |
 | FAV-05 | Phase 5 | Complete |
 | FAV-06 | Phase 5 | Complete |
 | REFRESH-01 | Phase 6 | Pending |
 | REFRESH-02 | Phase 6 | Pending |
 | REFRESH-03 | Phase 6 | Pending |
-| QOL-01 | Phase 6 | Pending |
-| QOL-02 | Phase 6 | Pending |
+| QOL-01 | Phase 6 | Complete |
+| QOL-02 | Phase 6 | Complete |
 
 **Coverage:**
 - v1 requirements: 30 total
