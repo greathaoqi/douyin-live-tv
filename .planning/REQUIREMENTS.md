@@ -38,7 +38,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Favorites Management
 
-- [ ] **FAV-01**: User can add new room by entering room ID or URL
+- [x] **FAV-01**: User can add new room by entering room ID or URL
 - [x] **FAV-02**: User can view list of saved favorite rooms
 - [x] **FAV-03**: User can delete rooms from favorites
 - [x] **FAV-04**: User can quickly select a favorite room to monitor
@@ -48,7 +48,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Refresh
 
 - [x] **REFRESH-01**: Manual pull-to-refresh for immediate stats update
-- [ ] **REFRESH-02**: Automatic refresh every 30 minutes when possible
+- [x] **REFRESH-02**: Automatic refresh every 30 minutes when possible
 - [x] **REFRESH-03**: Uses system BackgroundTasks framework for background refresh
 
 ### Quality of Life (tvOS)
@@ -102,14 +102,14 @@ Which phases cover which requirements. Updated during roadmap creation.
 | LIVE-05 | Phase 4 | Complete |
 | LIVE-06 | Phase 4 | Complete |
 | LIVE-07 | Phase 4 | Complete |
-| FAV-01 | Phase 7 | Pending |
+| FAV-01 | Phase 7 | Complete |
 | FAV-02 | Phase 5 | Complete |
 | FAV-03 | Phase 5 | Complete |
 | FAV-04 | Phase 5 | Complete |
 | FAV-05 | Phase 5 | Complete |
 | FAV-06 | Phase 5 | Complete |
 | REFRESH-01 | Phase 6 | Complete |
-| REFRESH-02 | Phase 7 | Pending |
+| REFRESH-02 | Phase 7 | Complete |
 | REFRESH-03 | Phase 6 | Complete |
 | QOL-01 | Phase 7 | Pending |
 | QOL-02 | Phase 6 | Complete |
