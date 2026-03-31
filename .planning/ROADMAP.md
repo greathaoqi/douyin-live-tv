@@ -106,7 +106,7 @@ Plans:
   4. User can quickly select a favorite room to monitor
   5. Last viewed room is remembered and opened automatically on app launch
   6. Favorites persist across app restarts via SwiftData
-**Plans:** 3/5 plans executed
+**Plans:** 4/5 plans executed
 **UI hint**: yes
 
 Plans:
@@ -115,6 +115,7 @@ Plans:
 - [ ] 05-02-PLAN.md — Implement FavoritesView UI with list and delete via edit mode
 - [x] 05-03-PLAN.md — Implement AddRoomView with URL parsing and add functionality
 - [x] 05-04-PLAN.md — Integrate all components: navigation binding, last room recall
+- [ ] 05-05-PLAN.md — Gap closure: Complete FavoritesView UI and create FavoriteRoomCell (verification)
 
 ### Phase 6: Refresh & Quality of Life
 **Goal:** Automatic and manual refresh work with proper background integration, and tvOS polish features are complete
