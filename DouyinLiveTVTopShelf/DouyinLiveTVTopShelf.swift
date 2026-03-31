@@ -8,6 +8,7 @@
 import Foundation
 import SwiftData
 import TVTopShelf
+import DouyinLiveTVDomain
 
 class DouyinLiveTVTopShelf: TVTopShelfProvider {
     var topShelfContent: some TVTopShelfContent {
