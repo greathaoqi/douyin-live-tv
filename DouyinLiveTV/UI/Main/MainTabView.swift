@@ -9,10 +9,15 @@ import SwiftUI
 
 struct MainTabView: View {
     @State private var selectedTab: Tab = .watchLive
+    private let initialRoomId: String?
+
+    init(initialRoomId: String? = nil) {
+        self.initialRoomId = initialRoomId
+    }
 
     var body: some View {
         TabView(selection: $selectedTab) {
-            WatchLiveView()
+            WatchLiveView(initialRoomId: initialRoomId)
                 .tabItem {
                     Label(Tab.watchLive.title, systemImage: Tab.watchLive.systemImage)
                 }

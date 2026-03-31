@@ -10,8 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject private var authStateManager: AuthStateManager
+    private let initialRoomId: String?
 
-    init(authStateManager: AuthStateManager = DependencyContainer.shared.authStateManager) {
+    init(initialRoomId: String? = nil, authStateManager: AuthStateManager = DependencyContainer.shared.authStateManager) {
+        self.initialRoomId = initialRoomId
         self.authStateManager = authStateManager
     }
 
@@ -38,7 +40,7 @@ private extension ContentView {
     }
 
     var mainUI: some View {
-        MainTabView()
+        MainTabView(initialRoomId: initialRoomId)
     }
 }
 
