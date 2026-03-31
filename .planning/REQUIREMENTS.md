@@ -24,12 +24,12 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **AUTH-01**: User can log into Douyin account via web view
 - [x] **AUTH-02**: Authentication tokens stored securely in Keychain
 - [x] **AUTH-03**: Session persists across app restarts
-- [x] **AUTH-04**: Token refresh handled automatically
+- [ ] **AUTH-04**: Token refresh handled automatically
 
 ### Live Room Display (Core Feature)
 
 - [x] **LIVE-01**: Display basic statistics: viewer count, likes, total gifts
-- [x] **LIVE-02**: Live video preview playback via AVPlayer
+- [ ] **LIVE-02**: Live video preview playback via AVPlayer
 - [x] **LIVE-03**: Stats overlay displayed on top of video
 - [x] **LIVE-04**: Large text sizing for stats (visible from couch distance)
 - [x] **LIVE-05**: Visual live/offline status indicator
@@ -38,7 +38,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Favorites Management
 
-- [x] **FAV-01**: User can add new room by entering room ID or URL
+- [ ] **FAV-01**: User can add new room by entering room ID or URL
 - [x] **FAV-02**: User can view list of saved favorite rooms
 - [x] **FAV-03**: User can delete rooms from favorites
 - [x] **FAV-04**: User can quickly select a favorite room to monitor
@@ -47,13 +47,13 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Refresh
 
-- [ ] **REFRESH-01**: Manual pull-to-refresh for immediate stats update
+- [x] **REFRESH-01**: Manual pull-to-refresh for immediate stats update
 - [ ] **REFRESH-02**: Automatic refresh every 30 minutes when possible
-- [ ] **REFRESH-03**: Uses system BackgroundTasks framework for background refresh
+- [x] **REFRESH-03**: Uses system BackgroundTasks framework for background refresh
 
 ### Quality of Life (tvOS)
 
-- [x] **QOL-01**: Top Shelf extension for quick access to favorites from home screen
+- [ ] **QOL-01**: Top Shelf extension for quick access to favorites from home screen
 - [x] **QOL-02**: Correct tvOS app icon sizing in Xcode project
 
 ## v2 Requirements
@@ -94,28 +94,30 @@ Which phases cover which requirements. Updated during roadmap creation.
 | AUTH-01 | Phase 2 | Complete |
 | AUTH-02 | Phase 2 | Complete |
 | AUTH-03 | Phase 2 | Complete |
-| AUTH-04 | Phase 2 | Complete |
+| AUTH-04 | Phase 7 | Pending |
 | LIVE-01 | Phase 4 | Complete |
-| LIVE-02 | Phase 4 | Complete |
+| LIVE-02 | Phase 7 | Pending |
 | LIVE-03 | Phase 4 | Complete |
 | LIVE-04 | Phase 4 | Complete |
 | LIVE-05 | Phase 4 | Complete |
 | LIVE-06 | Phase 4 | Complete |
 | LIVE-07 | Phase 4 | Complete |
-| FAV-01 | Phase 5 | Complete |
+| FAV-01 | Phase 7 | Pending |
 | FAV-02 | Phase 5 | Complete |
 | FAV-03 | Phase 5 | Complete |
 | FAV-04 | Phase 5 | Complete |
 | FAV-05 | Phase 5 | Complete |
 | FAV-06 | Phase 5 | Complete |
-| REFRESH-01 | Phase 6 | Pending |
-| REFRESH-02 | Phase 6 | Pending |
-| REFRESH-03 | Phase 6 | Pending |
-| QOL-01 | Phase 6 | Complete |
+| REFRESH-01 | Phase 6 | Complete |
+| REFRESH-02 | Phase 7 | Pending |
+| REFRESH-03 | Phase 6 | Complete |
+| QOL-01 | Phase 7 | Pending |
 | QOL-02 | Phase 6 | Complete |
 
 **Coverage:**
 - v1 requirements: 30 total
+- Complete: 25
+- Pending (gap closure): 5
 - Mapped to phases: 30
 - Unmapped: 0 ✓
 
