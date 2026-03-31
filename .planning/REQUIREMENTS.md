@@ -53,7 +53,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Quality of Life (tvOS)
 
-- [ ] **QOL-01**: Top Shelf extension for quick access to favorites from home screen
+- [x] **QOL-01**: Top Shelf extension for quick access to favorites from home screen
 - [x] **QOL-02**: Correct tvOS app icon sizing in Xcode project
 
 ## v2 Requirements
@@ -111,7 +111,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | REFRESH-01 | Phase 6 | Complete |
 | REFRESH-02 | Phase 7 | Complete |
 | REFRESH-03 | Phase 6 | Complete |
-| QOL-01 | Phase 7 | Pending |
+| QOL-01 | Phase 7 | Complete |
 | QOL-02 | Phase 6 | Complete |
 
 **Coverage:**

@@ -152,7 +152,7 @@ Plans:
 Plans:
 - [x] 07-01-PLAN.md — LiveRoom model + LiveStatsService auth + DependencyContainer
 - [x] 07-02-PLAN.md — FavoritesService + RefreshService streamURL updates
-- [ ] 07-03-PLAN.md — Top Shelf compilation + deep link handling
+- [x] 07-03-PLAN.md — Top Shelf compilation + deep link handling
 
 ## Progress
 
