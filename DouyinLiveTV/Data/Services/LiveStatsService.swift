@@ -10,13 +10,15 @@ import DouyinLiveTVDomain
 
 public class LiveStatsService {
     private let apiClient: APIClient
+    private let authService: AuthService
 
-    public init(apiClient: APIClient) {
+    public init(apiClient: APIClient, authService: AuthService) {
         self.apiClient = apiClient
+        self.authService = authService
     }
 
     public func fetchStats(for roomId: String) async throws -> LiveStats {
         let endpoint = Endpoint.getLiveStats(roomId: roomId)
-        return try await apiClient.request(endpoint)
+        return try await authService.authenticatedRequest(endpoint)
     }
 }
