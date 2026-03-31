@@ -29,10 +29,13 @@ class DependencyContainer {
     public let playerService: PlayerService
     public let liveStatsService: LiveStatsService
 
+    // Favorites dependencies
+    public let favoritesService: FavoritesService
+
     private init() {
         // Configure SwiftData model container
         do {
-            self.modelContainer = try ModelContainer(for: [])
+            self.modelContainer = try ModelContainer(for: [LiveRoom.self])
         } catch {
             fatalError("Failed to initialize SwiftData ModelContainer: \(error)")
         }
@@ -53,5 +56,11 @@ class DependencyContainer {
         // Initialize live playback dependencies
         self.playerService = PlayerService()
         self.liveStatsService = LiveStatsService(apiClient: self.apiClient)
+
+        // Initialize favorites dependencies
+        self.favoritesService = FavoritesService(
+            modelContainer: self.modelContainer,
+            liveStatsService: self.liveStatsService
+        )
     }
 }
