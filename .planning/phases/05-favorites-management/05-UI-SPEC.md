@@ -33,7 +33,7 @@ Declared values (multiples of 4, from existing codebase):
 |-------|-------|-------|
 | xs | 4pt | Label/value text gaps |
 | sm | 8pt | Text field corner radius, compact spacing |
-| md | 16px | HStack element spacing, small padding |
+| md | 16pt | HStack element spacing, small padding |
 | lg | 24pt | VStack section spacing, default spacing |
 | xl | 32pt | Outer padding, large layout gaps |
 | 2xl | 48pt | Major section breaks |
@@ -86,12 +86,14 @@ From requirements and decisions:
 | Element | Copy |
 |---------|------|
 | Primary CTA (Add) | `Add Room` |
-| Primary CTA (Delete) | `Delete` |
+| Primary CTA (Delete) | `Delete Room` |
 | Empty state heading | `No Favorites Yet` |
 | Empty state body | `Add your first live room to start monitoring statistics from the big screen.` |
 | Invalid input error | `Could not extract room ID from input. Please enter a valid room ID or share URL.` |
 | API fetch error | `Could not find room. Please check the URL or ID and try again.` |
-| Destructive confirmation (delete) | `Delete`: Are you sure you want to remove this room from favorites? |
+| Destructive confirmation (delete) | `Delete Room`: Are you sure you want to remove this room from favorites? |
+
+Delete confirmation pattern: Use native `alert()` modifier with system alert dialog (standard iOS/tvOS pattern).
 
 ---
 
