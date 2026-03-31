@@ -111,7 +111,7 @@ Plans:
 
 Plans:
 - [ ] 05-00-PLAN.md — Create test scaffolds for unit testing (Wave 0)
-- [ ] 05-01-PLAN.md — Create FavoritesService and configure SwiftData ModelContainer
+- [x] 05-01-PLAN.md — Create FavoritesService and configure SwiftData ModelContainer
 - [ ] 05-02-PLAN.md — Implement FavoritesView UI with list and delete via edit mode
 - [ ] 05-03-PLAN.md — Implement AddRoomView with URL parsing and add functionality
 - [ ] 05-04-PLAN.md — Integrate all components: navigation binding, last room recall

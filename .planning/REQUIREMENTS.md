@@ -43,7 +43,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **FAV-03**: User can delete rooms from favorites
 - [ ] **FAV-04**: User can quickly select a favorite room to monitor
 - [ ] **FAV-05**: Last viewed room is remembered and opened on app launch
-- [ ] **FAV-06**: Favorites persist across app restarts via SwiftData
+- [x] **FAV-06**: Favorites persist across app restarts via SwiftData
 
 ### Refresh
 
@@ -107,7 +107,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FAV-03 | Phase 5 | Pending |
 | FAV-04 | Phase 5 | Pending |
 | FAV-05 | Phase 5 | Pending |
-| FAV-06 | Phase 5 | Pending |
+| FAV-06 | Phase 5 | Complete |
 | REFRESH-01 | Phase 6 | Pending |
 | REFRESH-02 | Phase 6 | Pending |
 | REFRESH-03 | Phase 6 | Pending |
