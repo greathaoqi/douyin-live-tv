@@ -11,7 +11,7 @@
 - [x] **Phase 1: Project Setup & Core Infrastructure** - Create Xcode project, establish architecture layers, configure dependencies (completed 2026-03-30)
 - [x] **Phase 2: Authentication & API Layer** - Implement secure authentication, Douyin API client, token management (completed 2026-03-30)
 - [x] **Phase 3: tvOS Foundation & Navigation** - Build basic UI structure with focus-based navigation, tab bar, tvOS HIG compliance (completed 2026-03-31)
-- [ ] **Phase 4: Live Room Core Display** - Implement main live room screen with statistics overlay and video playback
+- [x] **Phase 4: Live Room Core Display** - Implement main live room screen with statistics overlay and video playback (completed 2026-03-31)
 - [ ] **Phase 5: Favorites Management** - Add ability to add, view, delete, and quickly access favorite rooms
 - [ ] **Phase 6: Refresh & Quality of Life** - Implement manual/automatic refresh and polish tvOS-specific features
 
@@ -88,7 +88,7 @@ Plans:
   5. Clear visual indicator shows whether room is live/offline
   6. User can toggle between overlay mode and full-screen video
   7. Picture in Picture (PiP) support works for video playback
-**Plans:** 2/3 plans executed
+**Plans:** 3/3 plans complete
 Plans:
 - [x] 04-01-PLAN.md — Create core services (PlayerService, LiveStatsService) and register in container
 - [x] 04-02-PLAN.md — Create view model and UI components (StatisticsOverlay, OverlayToggleButton)
@@ -106,8 +106,15 @@ Plans:
   4. User can quickly select a favorite room to monitor
   5. Last viewed room is remembered and opened automatically on app launch
   6. Favorites persist across app restarts via SwiftData
-**Plans:** TBD
+**Plans:** 5 plans
 **UI hint**: yes
+
+Plans:
+- [ ] 05-00-PLAN.md — Create test scaffolds for unit testing (Wave 0)
+- [ ] 05-01-PLAN.md — Create FavoritesService and configure SwiftData ModelContainer
+- [ ] 05-02-PLAN.md — Implement FavoritesView UI with list and delete via edit mode
+- [ ] 05-03-PLAN.md — Implement AddRoomView with URL parsing and add functionality
+- [ ] 05-04-PLAN.md — Integrate all components: navigation binding, last room recall
 
 ### Phase 6: Refresh & Quality of Life
 **Goal:** Automatic and manual refresh work with proper background integration, and tvOS polish features are complete
@@ -129,10 +136,10 @@ Plans:
 | 1. Project Setup & Core Infrastructure | 2/3 | Complete    | 2026-03-30 |
 | 2. Authentication & API Layer | 4/4 | Complete    | 2026-03-30 |
 | 3. tvOS Foundation & Navigation | 0/4 | Complete    | 2026-03-31 |
-| 4. Live Room Core Display | 2/3 | In Progress|  |
-| 5. Favorites Management | 0/0 | Not started | - |
+| 4. Live Room Core Display | 2/3 | Complete    | 2026-03-31 |
+| 5. Favorites Management | 0/5 | Planned     | - |
 | 6. Refresh & Quality of Life | 0/0 | Not started | -
 
 ---
 
-*Last updated: 2026-03-31 after planning*
+*Last updated: 2026-03-31 after revision*
