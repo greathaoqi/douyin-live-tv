@@ -26,6 +26,15 @@
 		14BFA2242B9F7B00000A9A551 /* DouyinAPIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2232B9F7B00000A9A551 /* DouyinAPIEndpoints.swift */; };
 		14BFA2262B9F7B00000A9A551 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2252B9F7B00000A9A551 /* Endpoint.swift */; };
 		14BFA2282B9F7B00000A9A551 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2272B9F7B00000A9A551 /* QRCodeGenerator.swift */; };
+		14BFA2292B9F7B00000A9A551 /* AppLifecycleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2292B9F7B00000A9A551 /* AppLifecycleState.swift */; };
+		14BFA2302B9F7B00000A9A551 /* AppLifecycleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2302B9F7B00000A9A551 /* AppLifecycleService.swift */; };
+		14BFA2312B9F7B00000A9A551 /* AppLifecycleObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2312B9F7B00000A9A551 /* AppLifecycleObserver.swift */; };
+		14BFA2322B9F7B00000A9A551 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2322B9F7B00000A9A551 /* MainTabView.swift */; };
+		14BFA2332B9F7B00000A9A551 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2332B9F7B00000A9A551 /* TabItem.swift */; };
+		14BFA2342B9F7B00000A9A551 /* WatchLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2342B9F7B00000A9A551 /* WatchLiveView.swift */; };
+		14BFA2352B9F7B00000A9A551 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2352B9F7B00000A9A551 /* FavoritesView.swift */; };
+		14BFA2362B9F7B00000A9A551 /* AppLifecycleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2362B9F7B00000A9A551 /* AppLifecycleTests.swift */; };
+		14BFA2372B9F7B00000A9A551 /* FocusSizeConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BFA2372B9F7B00000A9A551 /* FocusSizeConstraintsTests.swift */; };
 		F57B4A5F299B1F4100A3C7B3 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F57B4A5F299B1F4100A3C7B3 /* KeychainSwift */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +71,15 @@
 		14BFA2232B9F7B00000A9A551 /* DouyinAPIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Network/DouyinAPIEndpoints.swift"; sourceTree = "<group>"; };
 		14BFA2252B9F7B00000A9A551 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Network/Endpoint.swift"; sourceTree = "<group>"; };
 		14BFA2272B9F7B00000A9A551 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Network/QRCodeGenerator.swift"; sourceTree = "<group>"; };
+		14BFA2292B9F7B00000A9A551 /* AppLifecycleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Domain/Common/AppLifecycleState.swift"; sourceTree = "<group>"; };
+		14BFA2302B9F7B00000A9A551 /* AppLifecycleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data/Services/AppLifecycleService.swift"; sourceTree = "<group>"; };
+		14BFA2312B9F7B00000A9A551 /* AppLifecycleObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/Common/AppLifecycleObserver.swift"; sourceTree = "<group>"; };
+		14BFA2322B9F7B00000A9A551 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/Main/MainTabView.swift"; sourceTree = "<group>"; };
+		14BFA2332B9F7B00000A9A551 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/Main/TabItem.swift"; sourceTree = "<group>"; };
+		14BFA2342B9F7B00000A9A551 /* WatchLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/WatchLive/WatchLiveView.swift"; sourceTree = "<group>"; };
+		14BFA2352B9F7B00000A9A551 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UI/Favorites/FavoritesView.swift"; sourceTree = "<group>"; };
+		14BFA2362B9F7B00000A9A551 /* AppLifecycleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DouyinLiveTVTests/AppLifecycleTests.swift"; sourceTree = "<group>"; };
+		14BFA2372B9F7B00000A9A551 /* FocusSizeConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DouyinLiveTVTests/FocusSizeConstraintsTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +132,9 @@
 			children = (
 				14BFA2152B9F7B00000A9A551 /* AddRoom */,
 				14BFA2292B9F7B00000A9A551 /* Login */,
+				14BFA2402B9F7B00000A9A551 /* Main */,
+				14BFA2412B9F7B00000A9A551 /* WatchLive */,
+				14BFA2422B9F7B00000A9A551 /* Favorites */,
 				14BFA1E72B9F7A8A00A9A551 /* ContentView.swift */,
 				14BFA2302B9F7B00000A9A551 /* Common */,
 			);
@@ -137,10 +158,36 @@
 			path = "UI/Login";
 			sourceTree = "<group>";
 		};
+		14BFA2402B9F7B00000A9A551 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2322B9F7B00000A9A551 /* MainTabView.swift */,
+				14BFA2332B9F7B00000A9A551 /* TabItem.swift */,
+			);
+			path = "UI/Main";
+			sourceTree = "<group>";
+		};
+		14BFA2412B9F7B00000A9A551 /* WatchLive */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2342B9F7B00000A9A551 /* WatchLiveView.swift */,
+			);
+			path = "UI/WatchLive";
+			sourceTree = "<group>";
+		};
+		14BFA2422B9F7B00000A9A551 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2352B9F7B00000A9A551 /* FavoritesView.swift */,
+			);
+			path = "UI/Favorites";
+			sourceTree = "<group>";
+		};
 		14BFA2302B9F7B00000A9A551 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				14BFA1E72B9F7A8A00A9A551 /* ContentView.swift */,
+				14BFA2312B9F7B00000A9A551 /* AppLifecycleObserver.swift */,
 			);
 			path = "UI/Common";
 			sourceTree = "<group>";
@@ -149,8 +196,17 @@
 			isa = PBXGroup;
 			children = (
 				14BFA1FE2B9F7B00000A9A551 /* Models */,
+				14BFA2382B9F7B00000A9A551 /* Common */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		14BFA2382B9F7B00000A9A551 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2292B9F7B00000A9A551 /* AppLifecycleState.swift */,
+			);
+			path = "Domain/Common";
 			sourceTree = "<group>";
 		};
 		14BFA1FE2B9F7B00000A9A551 /* Models */ = {
@@ -169,8 +225,17 @@
 			children = (
 				14BFA2082B9F7B00000A9A551 /* Keychain */,
 				14BFA2312B9F7B00000A9A551 /* Network */,
+				14BFA2392B9F7B00000A9A551 /* Services */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		14BFA2392B9F7B00000A9A551 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14BFA2302B9F7B00000A9A551 /* AppLifecycleService.swift */,
+			);
+			path = "Data/Services";
 			sourceTree = "<group>";
 		};
 		14BFA2312B9F7B00000A9A551 /* Network */ = {
@@ -206,6 +271,8 @@
 				14BFA1F12B9F7A9400A9A551 /* DouyinLiveTVTests.swift */,
 				14BFA1FD2B9F7B00000A9A551 /* ModelTests.swift */,
 				14BFA2102B9F7B00000A9A551 /* TokenStorageTests.swift */,
+				14BFA2362B9F7B00000A9A551 /* AppLifecycleTests.swift */,
+				14BFA2372B9F7B00000A9A551 /* FocusSizeConstraintsTests.swift */,
 			);
 			path = DouyinLiveTVTests;
 			sourceTree = "<group>";
@@ -324,6 +391,13 @@
 				14BFA2242B9F7B00000A9A551 /* DouyinAPIEndpoints.swift in Sources */,
 				14BFA2262B9F7B00000A9A551 /* Endpoint.swift in Sources */,
 				14BFA2282B9F7B00000A9A551 /* QRCodeGenerator.swift in Sources */,
+				14BFA2292B9F7B00000A9A551 /* AppLifecycleState.swift in Sources */,
+				14BFA2302B9F7B00000A9A551 /* AppLifecycleService.swift in Sources */,
+				14BFA2312B9F7B00000A9A551 /* AppLifecycleObserver.swift in Sources */,
+				14BFA2322B9F7B00000A9A551 /* MainTabView.swift in Sources */,
+				14BFA2332B9F7B00000A9A551 /* TabItem.swift in Sources */,
+				14BFA2342B9F7B00000A9A551 /* WatchLiveView.swift in Sources */,
+				14BFA2352B9F7B00000A9A551 /* FavoritesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +408,8 @@
 				14BFA1F22B9F7A9400A9A551 /* DouyinLiveTVTests.swift in Sources */,
 				14BFA2022B9F7B00000A9A551 /* ModelTests.swift in Sources */,
 				14BFA2112B9F7B00000A9A551 /* TokenStorageTests.swift in Sources */,
+				14BFA2362B9F7B00000A9A551 /* AppLifecycleTests.swift in Sources */,
+				14BFA2372B9F7B00000A9A551 /* FocusSizeConstraintsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
