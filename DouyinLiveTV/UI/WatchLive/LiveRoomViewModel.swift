@@ -24,6 +24,8 @@ public class LiveRoomViewModel: ObservableObject {
     @Published public private(set) var errorMessage: String?
     @Published public var roomTitle: String = ""
 
+    private var currentRoomId: String?
+    private var currentStreamURL: URL?
     private var cancellables = Set<AnyCancellable>()
 
     public init(
@@ -64,9 +66,38 @@ public class LiveRoomViewModel: ObservableObject {
             }
 
             stats = try await liveStatsService.fetchStats(for: roomId)
+            currentRoomId = roomId
+            currentStreamURL = streamURL
+
+            // If streamURL was nil but API returned a streamURL, load it now
+            if currentStreamURL == nil, let streamURLString = stats?.streamURL, let streamURL = URL(string: streamURLString) {
+                playerService.loadVideo(url: streamURL)
+                playerService.play()
+                currentStreamURL = streamURL
+            }
+
             isLoading = false
         } catch {
             errorMessage = error.localizedDescription
+            isLoading = false
+        }
+    }
+
+    /// Refreshes the current live room statistics by fetching the latest data from the API
+    /// - Note: Does nothing if no room is currently loaded
+    public func refresh() async {
+        guard let roomId = currentRoomId else {
+            return
+        }
+
+        isLoading = true
+        errorMessage = nil
+
+        do {
+            stats = try await liveStatsService.fetchStats(for: roomId)
+            isLoading = false
+        } catch {
+            errorMessage = "Could not refresh live room data. Pull to try again."
             isLoading = false
         }
     }

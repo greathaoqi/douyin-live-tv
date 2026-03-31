@@ -8,6 +8,9 @@
 import Foundation
 
 struct LiveStats: Codable, Equatable {
+    let title: String
+    let nickname: String
+    let avatarUrl: String?
     let viewerCount: Int
     let likeCount: Int
     let totalGiftValue: Int
@@ -16,6 +19,9 @@ struct LiveStats: Codable, Equatable {
     let streamURL: String?
 
     init(
+        title: String,
+        nickname: String,
+        avatarUrl: String? = nil,
         viewerCount: Int,
         likeCount: Int,
         totalGiftValue: Int,
@@ -23,6 +29,9 @@ struct LiveStats: Codable, Equatable {
         startTime: Date?,
         streamURL: String? = nil
     ) {
+        self.title = title
+        self.nickname = nickname
+        self.avatarUrl = avatarUrl
         self.viewerCount = viewerCount
         self.likeCount = likeCount
         self.totalGiftValue = totalGiftValue
