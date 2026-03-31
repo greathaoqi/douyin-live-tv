@@ -10,7 +10,7 @@
 
 - [x] **Phase 1: Project Setup & Core Infrastructure** - Create Xcode project, establish architecture layers, configure dependencies (completed 2026-03-30)
 - [x] **Phase 2: Authentication & API Layer** - Implement secure authentication, Douyin API client, token management (completed 2026-03-30)
-- [ ] **Phase 3: tvOS Foundation & Navigation** - Build basic UI structure with focus-based navigation, tab bar, tvOS HIG compliance
+- [x] **Phase 3: tvOS Foundation & Navigation** - Build basic UI structure with focus-based navigation, tab bar, tvOS HIG compliance (completed 2026-03-31)
 - [ ] **Phase 4: Live Room Core Display** - Implement main live room screen with statistics overlay and video playback
 - [ ] **Phase 5: Favorites Management** - Add ability to add, view, delete, and quickly access favorite rooms
 - [ ] **Phase 6: Refresh & Quality of Life** - Implement manual/automatic refresh and polish tvOS-specific features
@@ -67,13 +67,14 @@ Plans:
   7. All focus targets meet minimum 88x88pt size
   8. App respects system dark mode setting
   9. App handles background/foreground transitions correctly (pauses video, refreshes data)
-**Plans:** 3 plans
+**Plans:** 4/4 plans complete
 **UI hint**: yes
 
 Plans:
 - [ ] 03-01-PLAN.md — Create app lifecycle observation infrastructure
 - [ ] 03-02-PLAN.md — Create main tab-based navigation structure
 - [ ] 03-03-PLAN.md — Enable dictation and full build verification
+- [ ] 03-04-PLAN.md — Fix Xcode project file paths for missing test files
 
 ### Phase 4: Live Room Core Display
 **Goal:** Users can view a live room with statistics overlay and live video preview
@@ -87,7 +88,11 @@ Plans:
   5. Clear visual indicator shows whether room is live/offline
   6. User can toggle between overlay mode and full-screen video
   7. Picture in Picture (PiP) support works for video playback
-**Plans:** TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 04-01-PLAN.md — Create core services (PlayerService, LiveStatsService) and register in container
+- [ ] 04-02-PLAN.md — Create view model and UI components (StatisticsOverlay, OverlayToggleButton)
+- [ ] 04-03-PLAN.md — Implement WatchLiveView with full integration and verification
 **UI hint**: yes
 
 ### Phase 5: Favorites Management
@@ -123,10 +128,10 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Project Setup & Core Infrastructure | 2/3 | Complete    | 2026-03-30 |
 | 2. Authentication & API Layer | 4/4 | Complete    | 2026-03-30 |
-| 3. tvOS Foundation & Navigation | 0/3 | Not started | - |
-| 4. Live Room Core Display | 0/0 | Not started | - |
+| 3. tvOS Foundation & Navigation | 0/4 | Complete    | 2026-03-31 |
+| 4. Live Room Core Display | 0/3 | Not started | - |
 | 5. Favorites Management | 0/0 | Not started | - |
-| 6. Refresh & Quality of Life | 0/0 | Not started | - |
+| 6. Refresh & Quality of Life | 0/0 | Not started | -
 
 ---
 
